@@ -8,8 +8,9 @@ import numpy as np
 # EDIT THIS EACH ITERATION — list all files to combine
 # =========================================================================
 FILES = [
-    "data_iter01.npz",
-    "data_iter02.npz",
+    "data_iter01a.npz",
+    "data_iter02a.npz",
+    "data_iter02b.npz",
 ]
 OUTPUT = "data_combined.npz"
 # =========================================================================
