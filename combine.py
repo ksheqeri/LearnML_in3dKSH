@@ -12,6 +12,8 @@ FILES = [
     "data_iter02a.npz",
     "data_iter02b.npz",
     "data_iter03.npz",
+    "data_iter04a.npz",
+    "data_iter04b.npz",
 ]
 OUTPUT = "data_combined.npz"
 # =========================================================================
