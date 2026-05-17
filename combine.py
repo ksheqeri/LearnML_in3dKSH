@@ -12,9 +12,9 @@ FILES = [
     "data_iter02a.npz",
     "data_iter02b.npz",
     "data_iter03.npz",
-    "data_iter04a.npz",
-    "data_iter04b.npz",
-    "data_iter06.npz"
+    "data_iter06.npz",
+    "data_iter07.npz",
+    "data_iter08.npz"
 ]
 OUTPUT = "data_combined.npz"
 # =========================================================================
