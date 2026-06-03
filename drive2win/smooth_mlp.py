@@ -3,7 +3,7 @@
 This module provides make_policy(), which plugs into the benchmark via
 --module drive2win.smooth_mlp.
 
-Design decisions
+Design
 ────────────────
 Throttle
   Fixed at 0.65 for every frame. A trained network that has learned
@@ -42,12 +42,12 @@ from drive2win.normalize import sensors_to_input
 # ── Tunable constants ─────────────────────────────────────────────────────
 
 THROTTLE          = 0.65   # fixed forward throttle — same every frame
-STEER_GAIN        = 1.4    # scale raw network steering output
+STEER_GAIN        = 1.6     # scale raw network steering output
 
 # Partial homing — network always contributes at least (1 - MAX_BLEND)
-MAX_BLEND         = 0.85   # cap: 85% homing at closest range, never 100%
+MAX_BLEND         = 0.85   # cap: 85%
 CP_HOMING_DIST    = 50.0   # metres — begin blending toward checkpoint
-CP_HOMING_GAIN    = 5.0    # proportional gain on heading_error
+CP_HOMING_GAIN    = 7.0    # proportional gain on heading_error
 
 # Wedge / stuck detection
 STUCK_SPEED       = 0.30
@@ -61,7 +61,7 @@ REVERSE_FRAMES    = 10
 # Fires when checkpoint_distance has not changed by PROGRESS_MIN metres
 # over the last PROGRESS_WINDOW frames (~3 seconds at 20 Hz).
 # Catches ramps, geometry traps, and spinning in place.
-PROGRESS_WINDOW   = 60
+PROGRESS_WINDOW   = 35
 PROGRESS_MIN      = 1.0
 
 # Orbit escape
